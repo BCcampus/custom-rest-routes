@@ -1,5 +1,5 @@
-# Rest Endpoints #
-**Tags:** rest, api, endpoints, json   
+# Rest Routes #
+**Tags:** rest, api, routes, endpoints, json   
 **Requires at least:** 3.7  
 **Tested up to:** 4.7.2  
 **Stable tag:** 1.0  

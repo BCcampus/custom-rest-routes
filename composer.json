@@ -1,9 +1,9 @@
 {
-    "name": "bccampus/rest-endpoints",
-    "description": "Activate WP REST API endpoints for custom post types.",
+    "name": "bccampus/rest-routes",
+    "description": "Activate WP REST API routes for custom post types.",
     "type": "wordpress-plugin",
     "license": "GPL-2.0+",
-    "homepage": "https://github.com/BCcampus/rest-endpoints/",
+    "homepage": "https://github.com/BCcampus/rest-routes/",
     "authors": [
         {
             "name": "Alex Paredes",
@@ -18,10 +18,11 @@
         "REST API",
         "custom post type",
         "endpoints",
+        "routes",
     ],
     "support": {
-        "issues": "https://github.com/Bccampus/rest-endpoints/issues",
-        "source": "https://github.com/BCcampus/rest-endpoints/"
+        "issues": "https://github.com/Bccampus/rest-routes/issues",
+        "source": "https://github.com/BCcampus/rest-routes/"
     },
     "minimum-stability": "dev",
     "require": {

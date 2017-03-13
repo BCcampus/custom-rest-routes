@@ -1,6 +1,6 @@
 
 {
-  "name": "rest-endpoints",
+  "name": "rest-routes",
   "version": "0.1.0",
   "main": "Gruntfile.js",
   "author": "Alex Paredes",
