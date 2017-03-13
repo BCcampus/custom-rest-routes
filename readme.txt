@@ -2,7 +2,7 @@
 Tags: rest, api, endpoints, json, routes
 Requires at least: 3.7
 Tested up to: 4.7.2
-Stable tag: 0.1.0
+Stable tag: 0.1.3
 License: MIT
 License URI: https://opensource.org/licenses/MIT 
 
@@ -34,14 +34,21 @@ Modifying a plugin or theme you did not write can be time consuming, and can lea
 1. The location of the settings page for this plugin.
 2. The initial settings page with no routes activated.
 3. After activating the routes you can test them by clicking the URL.
+4. Multisite and Pressbooks support
 
 == Changelog ==
+
+= 1.0.3 =
+* add multisite support
+* coding standards, optimization
+* language support
+* changing endpoints to routes to reflect functionality
 
 = 1.0 =
 * Initial Release 
 
 == Overview of Features ==
 
-* Quick and Painless routes for custom post types
+* Quick and Painless REST API support for custom post types
 * Lists all of your registered custom post types  
-* Test the routes url's
+* Interface for testing a routes url

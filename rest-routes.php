@@ -6,6 +6,7 @@
  * Text Domain:     rest-routes
  * Domain Path:     /languages
  * Version:         1.0.3
+ * Licence:         MIT
  * Tags: pressbooks, rest api, custom, post types, routes, endpoints
  *
  * @package         REST-ROUTES
@@ -113,7 +114,7 @@ class Routes {
 	function settingsPage() {
 		$slug     = $this->slug;
 		$callback = array( $this, 'settingsPageContent' );
-		add_submenu_page( $this->file_name, 'REST Routes', 'Rest Routes', 'manage_options', $slug, $callback );
+		add_submenu_page( $this->file_name, 'REST Routes', 'REST Routes', 'manage_options', $slug, $callback );
 	}
 
 	/**

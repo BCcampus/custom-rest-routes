@@ -2,7 +2,7 @@
     "name": "bccampus/rest-routes",
     "description": "Activate WP REST API routes for custom post types.",
     "type": "wordpress-plugin",
-    "license": "GPL-2.0+",
+    "license": "MIT",
     "homepage": "https://github.com/BCcampus/rest-routes/",
     "authors": [
         {

@@ -22,19 +22,22 @@ that registered the custom post type.
 ## Screenshots ##
 
 ### 1. The location of the settings page for this plugin. ###
-![The location of the settings page for this plugin.](https://github.com/alexpflores/rest-endpoints/blob/master/assets/screenshot-1.png)
+![The location of the settings page for this plugin.](https://github.com/bccampus/rest-routes/blob/dev/assets/screenshot-1.png)
 
 ### 2. The initial settings page with no endpoints activated.  ###
-![The initial settings page with no endpoints activated. ](https://github.com/alexpflores/rest-endpoints/blob/master/assets/screenshot-2.png)
+![The initial settings page with no endpoints activated. ](https://github.com/bccampus/rest-routes/blob/dev/assets/screenshot-2.png)
 
 ### 3. After activating the endpoints you can test them by clicking the URL.  ###
-![After activating the endpoints you can test them by clicking the URL. ](https://github.com/alexpflores/rest-endpoints/blob/master/assets/screenshot-3.png)
+![After activating the endpoints you can test them by clicking the URL. ](https://github.com/bccampus/rest-routes/blob/dev/assets/screenshot-3.png)
+
+### 4. Works on multisite, can be Network Activated. ###
+![Pressboooks Support](https://github.com/bccampus/rest-routes/blob/dev/assets/screenshot-4.png)
 
 ## Installation ##
 
-1. Upload `rest-endpoints.php` to the `/wp-content/plugins/` directory
+1. Upload `rest-routes.php` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Click on the "REST EndPoints" menu item location under the Settings menu. 
+3. Click on the "REST Routes" menu item location under the Settings menu. 
 
 ## Frequently Asked Questions ##
 
