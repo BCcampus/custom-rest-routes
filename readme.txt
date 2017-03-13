@@ -1,7 +1,7 @@
 === Rest Routes ===
 Tags: rest, api, endpoints, json, routes
-Requires at least: 3.7
-Tested up to: 4.7.2
+Requires at least: 4.7.3
+Tested up to: 4.7.3
 Stable tag: 0.1.3
 License: MIT
 License URI: https://opensource.org/licenses/MIT 
@@ -15,7 +15,7 @@ that registered the custom post type.
 
 == Installation ==
 
-1. Upload `rest-routes.php` to the `/wp-content/plugins/` directory
+1. Upload the `rest-routes` directory to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Click on the "REST routes" menu item location under the Settings menu.
 

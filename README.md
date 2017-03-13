@@ -1,8 +1,8 @@
 # Rest Routes #
 **Tags:** rest, api, routes, endpoints, json   
-**Requires at least:** 3.7  
-**Tested up to:** 4.7.2  
-**Stable tag:** 1.0  
+**Requires at least:** 4.7.3  
+**Tested up to:** 4.7.3  
+**Stable tag:** 1.0.3  
 **License:** MIT  
 **License URI:** https://opensource.org/licenses/MIT   
 
@@ -30,12 +30,12 @@ that registered the custom post type.
 ### 3. After activating the endpoints you can test them by clicking the URL.  ###
 ![After activating the endpoints you can test them by clicking the URL. ](https://github.com/bccampus/rest-routes/blob/dev/assets/screenshot-3.png)
 
-### 4. Works on multisite, can be Network Activated. ###
+### 4. Works on multisite/Pressbooks, can be Network Activated. ###
 ![Pressboooks Support](https://github.com/bccampus/rest-routes/blob/dev/assets/screenshot-4.png)
 
 ## Installation ##
 
-1. Upload `rest-routes.php` to the `/wp-content/plugins/` directory
+1. Upload the `rest-routes` directory to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Click on the "REST Routes" menu item location under the Settings menu. 
 
@@ -49,7 +49,3 @@ If you installed a plugin or theme that registered a custom content type for you
 
 Modifying a plugin or theme you did not write can be time consuming, and can lead to issues such as losing the ability to update the plugin.  
 
-## Changelog ##
-
-### 1.0 ###
-* Initial Release 
