@@ -150,16 +150,22 @@ class Endpoints {
 		);
 
 		// Test Endpoints Section
-		add_settings_section(
-			'test_' . $_section,
-			__( 'Test Endpoints', 'rest-endpoints' ),
-			array( $this, 'renderSectionCallback' ),
-			$_page
-		);
+		// only works on single installs
+		if ( ! is_multisite() ) {
+			add_settings_section(
+				'test_' . $_section,
+				__( 'Test Endpoints', 'rest-endpoints' ),
+				array( $this, 'renderSectionCallback' ),
+				$_page
+			);
+		}
 
 		$this->updateSettings();
 	}
 
+	/**
+	 * Updates options on post event
+	 */
 	function updateSettings() {
 		if ( isset( $_POST['option_page'] ) && $this->slug === $_POST['option_page'] ) {
 			if ( is_multisite() ) {
@@ -240,6 +246,8 @@ class Endpoints {
 	}
 
 	/**
+	 * Modifies input from string to integer value
+	 *
 	 * @param $input
 	 *
 	 * @return mixed
