@@ -2,7 +2,7 @@
 /**
  * Class SampleTest
  *
- * @package rest-endpoints
+ * @package rest-routes
  */
 
 /**
