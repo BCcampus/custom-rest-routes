@@ -1,14 +1,11 @@
 <?php
 /**
- * Class SampleTest
+ * Class testRoutes
  *
  * @package rest-routes
  */
 
-/**
- * Sample test case.
- */
-class SampleTest extends WP_UnitTestCase {
+class testRoutes extends WP_UnitTestCase {
 
 	/**
 	 * A single example test.
