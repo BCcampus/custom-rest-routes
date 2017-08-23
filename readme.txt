@@ -1,8 +1,8 @@
 === Rest Routes ===
 Tags: rest, api, endpoints, json, routes
-Requires at least: 4.7.3
-Tested up to: 4.7.3
-Stable tag: 0.1.3
+Requires at least: 4.8.1
+Tested up to: 4.8.1
+Stable tag: 2.0.0
 License: MIT
 License URI: https://opensource.org/licenses/MIT 
 
@@ -37,6 +37,8 @@ Modifying a plugin or theme you did not write can be time consuming, and can lea
 4. Multisite and Pressbooks support
 
 == Changelog ==
+= 2.0.0 =
+* renaming plugin to avoid conflict
 
 = 1.0.3 =
 * add multisite support
