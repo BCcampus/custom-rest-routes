@@ -1,8 +1,8 @@
 # Rest Routes #
 **Tags:** rest, api, routes, endpoints, json   
-**Requires at least:** 4.7.3  
-**Tested up to:** 4.7.3  
-**Stable tag:** 1.0.3  
+**Requires at least:** 4.8.1  
+**Tested up to:** 4.8.1  
+**Stable tag:** 2.0.0  
 **License:** MIT  
 **License URI:** https://opensource.org/licenses/MIT   
 

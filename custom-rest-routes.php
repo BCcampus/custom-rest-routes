@@ -5,7 +5,7 @@
  * Author:          Alex Paredes, Brad Payne
  * Text Domain:     custom-rest-routes
  * Domain Path:     /languages
- * Version:         1.0.3
+ * Version:         2.0.0
  * Licence:         MIT
  * Tags: pressbooks, rest api, custom, post types, routes, endpoints
  *
