@@ -1,15 +1,15 @@
 <?php
 /**
- * Plugin Name:     REST Routes
+ * Plugin Name:     Custom REST Routes
  * Description:     Activate routes for custom post types that were registered by another plugin or theme. Visit the settings menu and click on the "REST Routes" menu item.
  * Author:          Alex Paredes, Brad Payne
- * Text Domain:     rest-routes
+ * Text Domain:     custom-rest-routes
  * Domain Path:     /languages
  * Version:         1.0.3
  * Licence:         MIT
  * Tags: pressbooks, rest api, custom, post types, routes, endpoints
  *
- * @package         REST-ROUTES
+ * @package         custom-rest-routes
  */
 namespace BCcampus\Rest;
 
@@ -151,14 +151,14 @@ class Routes {
 		 *****************************************/
 		add_settings_section(
 			'available_' . $_section,
-			__( 'Available Custom Post Types', 'rest-routes' ),
+			__( 'Available Custom Post Types', 'custom-rest-routes' ),
 			array( $this, 'renderSectionCallback' ),
 			$_page
 		);
 
 		add_settings_field(
 			'add_rest_routes',
-			__( 'Add Routes', 'rest-routes' ),
+			__( 'Add Routes', 'custom-rest-routes' ),
 			array( $this, 'renderFieldCallback' ),
 			$_page,
 			'available_' . $_section
@@ -176,7 +176,7 @@ class Routes {
 		if ( ! is_multisite() ) {
 			add_settings_section(
 				'test_' . $_section,
-				__( 'Test Routes', 'rest-routes' ),
+				__( 'Test Routes', 'custom-rest-routes' ),
 				array( $this, 'renderSectionCallback' ),
 				$_page
 			);

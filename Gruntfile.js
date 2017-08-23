@@ -9,7 +9,7 @@ module.exports = function( grunt ) {
 
 		addtextdomain: {
 			options: {
-				textdomain: 'rest-routes',
+				textdomain: 'custom-rest-routes',
 			},
 			target: {
 				files: {
@@ -30,8 +30,8 @@ module.exports = function( grunt ) {
 			target: {
 				options: {
 					domainPath: '/languages',
-					mainFile: 'rest-routes.php',
-					potFilename: 'rest-routes.pot',
+					mainFile: 'custom-rest-routes.php',
+					potFilename: 'custom-rest-routes.pot',
 					potHeaders: {
 						poedit: true,
 						'x-poedit-keywordslist': true
