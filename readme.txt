@@ -15,7 +15,7 @@ that registered the custom post type.
 
 == Installation ==
 
-1. Upload the `rest-routes` directory to the `/wp-content/plugins/` directory
+1. Upload the `custom-rest-routes` directory to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Click on the "REST routes" menu item location under the Settings menu.
 

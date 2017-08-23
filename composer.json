@@ -1,8 +1,8 @@
 {
-    "name": "bccampus/rest-routes",
+    "name": "bccampus/custom-rest-routes",
     "description": "WP Plugin Activate WP REST API routes for custom post types.",
     "license": "MIT",
-    "homepage": "https://github.com/BCcampus/rest-routes/",
+    "homepage": "https://github.com/BCcampus/custom-rest-routes/",
     "authors": [
         {
             "name": "Alex Paredes",
@@ -20,8 +20,8 @@
         "routes"
     ],
     "support": {
-        "issues": "https://github.com/Bccampus/rest-routes/issues",
-        "source": "https://github.com/BCcampus/rest-routes/"
+        "issues": "https://github.com/Bccampus/custom-rest-routes/issues",
+        "source": "https://github.com/BCcampus/custom-rest-routes/"
     },
     "minimum-stability": "dev",
     "require": {
@@ -32,7 +32,7 @@
         "wp-coding-standards/wpcs": "^0.10"
     },
     "autoload": {
-        "files": ["rest-routes.php"]
+        "files": ["custom-rest-routes.php"]
     },
     "archive" : {
         "exclude": [

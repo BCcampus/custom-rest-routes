@@ -2,7 +2,7 @@
 /**
  * Class testRoutes
  *
- * @package rest-routes
+ * @package custom-rest-routes
  */
 
 class testRoutes extends WP_UnitTestCase {
