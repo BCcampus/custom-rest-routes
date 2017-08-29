@@ -101,7 +101,7 @@ class Routes {
 
 			// Set to support rest endpoint
 			foreach ( $option as $key => $val ) {
-				if ( 1 === $val ) {
+				if ( 1 === $val && isset( $wp_post_types[ $key ] ) ) {
 					$wp_post_types[ $key ]->show_in_rest = true;
 				}
 			}
