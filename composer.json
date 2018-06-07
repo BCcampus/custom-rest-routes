@@ -25,7 +25,6 @@
         "issues": "https://github.com/Bccampus/custom-rest-routes/issues",
         "source": "https://github.com/BCcampus/custom-rest-routes/"
     },
-    "minimum-stability": "dev",
     "require-dev": {
         "phpunit/phpunit": "~5.7",
         "humanmade/coding-standards": "^0.2.1"
