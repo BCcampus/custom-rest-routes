@@ -35,7 +35,7 @@
   },
   "require-dev": {
     "phpunit/phpunit": "~5.7",
-    "humanmade/coding-standards": "^0.2.1"
+    "humanmade/coding-standards": "^0.3"
   },
   "archive": {
     "exclude": [
@@ -43,6 +43,14 @@
       ".travis.yml",
       "phpunit.xml",
       "tests"
+    ]
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpunit --configuration phpunit.xml ."
+    ],
+    "standards": [
+      "vendor/bin/phpcs --standard=phpcs.ruleset.xml ."
     ]
   }
 }
