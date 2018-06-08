@@ -1,40 +1,48 @@
 {
-    "name": "bccampus/custom-rest-routes",
-    "description": "WP Plugin Activate WP REST API routes for custom post types.",
-    "license": "MIT",
-    "type": "wordpress-plugin",
-    "version": "2.0",
-    "homepage": "https://github.com/BCcampus/custom-rest-routes/",
-    "authors": [
-        {
-            "name": "Alex Paredes",
-            "email": "aparedes@bccampus.ca"
-        },
-        {
-            "name": "Brad Payne",
-            "email": "brad@bradpayne.ca"
-        }
-    ],
-    "keywords": [
-        "REST API",
-        "custom post type",
-        "endpoints",
-        "routes"
-    ],
-    "support": {
-        "issues": "https://github.com/Bccampus/custom-rest-routes/issues",
-        "source": "https://github.com/BCcampus/custom-rest-routes/"
+  "name": "bccampus/custom-rest-routes",
+  "description": "WP Plugin Activate WP REST API routes for custom post types.",
+  "license": "MIT",
+  "type": "wordpress-plugin",
+  "version": "2.0",
+  "homepage": "https://github.com/BCcampus/custom-rest-routes/",
+  "authors": [
+    {
+      "name": "Alex Paredes",
+      "email": "aparedes@bccampus.ca"
     },
-    "require-dev": {
-        "phpunit/phpunit": "~5.7",
-        "humanmade/coding-standards": "^0.2.1"
-    },
-    "archive" : {
-        "exclude": [
-            ".gitignore",
-            ".travis.yml",
-            "phpunit.xml",
-            "tests"
-        ]
+    {
+      "name": "Brad Payne",
+      "email": "brad@bradpayne.ca"
     }
+  ],
+  "keywords": [
+    "REST API",
+    "custom post type",
+    "endpoints",
+    "routes"
+  ],
+  "support": {
+    "issues": "https://github.com/Bccampus/custom-rest-routes/issues",
+    "source": "https://github.com/BCcampus/custom-rest-routes/"
+  },
+  "config": {
+    "platform": {
+      "php": "7.0.30"
+    }
+  },
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~5.7",
+    "humanmade/coding-standards": "^0.2.1"
+  },
+  "archive": {
+    "exclude": [
+      ".gitignore",
+      ".travis.yml",
+      "phpunit.xml",
+      "tests"
+    ]
+  }
 }
