@@ -2,10 +2,10 @@
 /**
  * Plugin Name:     Custom REST Routes
  * Description:     Activate routes for custom post types that were registered by another plugin or theme. Visit the settings menu and click on the "REST Routes" menu item.
- * Author:          Alex Paredes, Brad Payne
+ * Author:          BCcampus
  * Text Domain:     custom-rest-routes
  * Domain Path:     /languages
- * Version:         2.0.0
+ * Version:         2.0.1
  * Licence:         MIT
  * Tags: pressbooks, rest api, custom, post types, routes, endpoints
  *
@@ -64,9 +64,9 @@ class Routes {
 	 */
 	function __construct() {
 		$this->isMultisite();
-		add_action( $this->admin_menu, array( $this, 'settingsPage' ) );
-		add_action( 'admin_init', array( $this, 'restOptions' ) );
-		add_action( 'init', array( $this, 'customPostTypeRestSupport' ) );
+		add_action( $this->admin_menu, [ $this, 'settingsPage' ] );
+		add_action( 'admin_init', [ $this, 'restOptions' ] );
+		add_action( 'init', [ $this, 'customPostTypeRestSupport' ] );
 	}
 
 	/**
@@ -113,7 +113,7 @@ class Routes {
 	 */
 	function settingsPage() {
 		$slug     = $this->slug;
-		$callback = array( $this, 'settingsPageContent' );
+		$callback = [ $this, 'settingsPageContent' ];
 		add_submenu_page( $this->file_name, 'REST Routes', 'REST Routes', 'manage_options', $slug, $callback );
 	}
 
@@ -140,7 +140,7 @@ class Routes {
 		$_page    = $_option = $this->slug;
 		$_section = $this->slug . '_section';
 
-		$defaults = array();
+		$defaults = [];
 
 		if ( false == call_user_func( $this->get_option, $this->slug ) ) {
 			call_user_func( $this->add_option, $this->slug, $defaults );
@@ -152,14 +152,14 @@ class Routes {
 		add_settings_section(
 			'available_' . $_section,
 			__( 'Available Custom Post Types', 'custom-rest-routes' ),
-			array( $this, 'renderSectionCallback' ),
+			[ $this, 'renderSectionCallback' ],
 			$_page
 		);
 
 		add_settings_field(
 			'add_rest_routes',
 			__( 'Add Routes', 'custom-rest-routes' ),
-			array( $this, 'renderFieldCallback' ),
+			[ $this, 'renderFieldCallback' ],
 			$_page,
 			'available_' . $_section
 		);
@@ -177,7 +177,7 @@ class Routes {
 			add_settings_section(
 				'test_' . $_section,
 				__( 'Test Routes', 'custom-rest-routes' ),
-				array( $this, 'renderSectionCallback' ),
+				[ $this, 'renderSectionCallback' ],
 				$_page
 			);
 		}
@@ -221,7 +221,7 @@ class Routes {
 						// only grab the ones that have been checked
 						if ( 1 === $val ) {
 							//@TODO different function required for multisite?
-							$url = home_url( "/wp-json/wp/v2/" . $endpoint );
+							$url = home_url( '/wp-json/wp/v2/' . $endpoint );
 							echo '<li><a href=' . esc_url( $url ) . ' target="_blank">' . $endpoint . '</a></li>';
 						}
 					}
@@ -242,10 +242,10 @@ class Routes {
 	 */
 	function renderFieldCallback() {
 		$options    = call_user_func( $this->get_option, $this->slug );
-		$args       = array(
+		$args       = [
 			'public'   => true,
-			'_builtin' => false
-		);
+			'_builtin' => false,
+		];
 		$output     = 'names';
 		$operator   = 'and';
 		$post_types = get_post_types( $args, $output, $operator );
@@ -253,7 +253,7 @@ class Routes {
 		// If there is registered custom post types, let's display them in an ordered list
 		if ( ! empty( $post_types ) ) {
 			foreach ( $post_types as $post_type ) {
-				echo "<p><input name='{$this->slug}[{$post_type}]' id='{$post_type}' type='checkbox' value='1' " . checked( 1, $options[ $post_type ], false ) . "/>";
+				echo "<p><input name='{$this->slug}[{$post_type}]' id='{$post_type}' type='checkbox' value='1' " . checked( 1, $options[ $post_type ], false ) . '/>';
 				echo "<label for='{$post_type}'>{$post_type}</label></p>";
 			}
 		} // If none were found, display a friendly message
